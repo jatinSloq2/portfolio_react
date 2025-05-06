@@ -20,8 +20,8 @@ import Projects from "./pages/Project.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
-import Dashboard from "./pages/Admins/Dashboard.jsx";
-import Login from "./pages/Admins/Login.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Login from "./pages/Login.jsx";
 //--------------------------------------------------------
 
 const App = () => {

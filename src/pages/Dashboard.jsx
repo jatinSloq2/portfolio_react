@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchMessages,deleteMessage  } from '../../api/ContactApi';
+import { fetchMessages,deleteMessage  } from '../api/ContactApi';
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
