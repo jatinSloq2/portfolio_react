@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className="bg-white text-black dark:bg-zinc-950 dark:text-white  border-dashed w-full border-t-2 border-gray-500">
-      <div className=" mx-auto relative px-4 max-w-[1000px] grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-l-2 border-r-2 md:text-left py-6 border-dashed border-gray-500">
+      <div className=" mx-auto relative px-4 max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-l-2 border-r-2 md:text-left py-6 border-dashed border-gray-500">
 
         {/* Section 1: Logo and Copyright */}
         <div className='mb-10'>

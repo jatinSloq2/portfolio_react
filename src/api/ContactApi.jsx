@@ -1,17 +1,21 @@
 import axios from "axios";
 
-const api = axios.create({baseURL: "https://backend-portfolio-react.onrender.com"});
+const api = axios.create({
+  baseURL: "https://backend-portfolio-react.onrender.com",
+});
 const token = localStorage.getItem("token");
 
 export const contactForm = async (formData) => {
   try {
-    const res = await api.post('/submit', formData); 
+    const start = Date.now();
+    const res = await api.post("/submit", formData,  { timeout: 5000 });
+     console.log("Form submitted in", Date.now() - start, "ms");
     if (res.status === 200) {
       return res;
     }
   } catch (error) {
     console.error("Error submitting the form:", error);
-    throw error; 
+    throw error;
   }
 };
 
@@ -34,24 +38,20 @@ export const fetchMessages = async () => {
 };
 
 export const deleteMessage = async (id) => {
-    if (!token) {
-      console.error("No token found");
-      return null;
-    }
-  
-    try {
-      const response = await api.delete(`/messages/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      return response;
-    } catch (error) {
-      console.error("Delete failed:", error);
-      throw error;
-    }
+  if (!token) {
+    console.error("No token found");
+    return null;
+  }
+
+  try {
+    const response = await api.delete(`/messages/${id}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response;
+  } catch (error) {
+    console.error("Delete failed:", error);
+    throw error;
+  }
 };
-
-
-  
-

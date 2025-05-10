@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "https://backend-portfolio-react.onrender.com" });
+const api = axios.create({
+  baseURL: "https://backend-portfolio-react.onrender.com",
+});
 
 export const fetchComments = async (blogId) => {
   try {

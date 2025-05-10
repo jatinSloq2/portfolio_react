@@ -1,11 +1,7 @@
-import React from 'react'
-
 const Skills = ({skillsData}) => {
   return (
     <section
-        id="skills"
-        className="py-12 px-2 max-w-[1000px] mx-auto animate-fade-in animate-text border-l-2 border-r-2  border-dashed border-gray-500 dark:border-gray-700"
-      >
+        className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
         <div className="container mx-auto text-center">
           {/* Skills Header */}
           <h1 className="text-4xl lg:text-6xl text-black dark:text-white mb-8  animate-text font-semibold">

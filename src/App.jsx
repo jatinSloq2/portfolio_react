@@ -27,11 +27,11 @@ import Login from "./pages/Login.jsx";
 const App = () => {
   useTheme();
   // useDisableRightClick()
-  // <ContextMenu/>
   return (
     <>
       <ScrollToTop />
       <Header />
+    {/* <ContextMenu/> */}
       <Routes>
         {/* Public routes */}
         <Route path="/" element={<Home />} />

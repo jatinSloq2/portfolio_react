@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HowICanHelp from '../components/Main/HowICanHelp';
+import Testimonial from '../components/others/Testimonial';
 
 const Home = () => {
   return (
-    // Main container section for the home page, including padding, margin, and styles for responsiveness
-    <section className="relative container mx-auto pt-28 md:pt-42 px-2 animate-fade-in pb-42 max-w-[1000px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
+    <>
+   
+   <section className="relative container mx-auto pt-28 md:pt-42 px-2 animate-fade-in pb-42 max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         
         {/* Decorative Image (Arrow decoration on the left side) */}
@@ -35,7 +38,7 @@ const Home = () => {
           <div className="flex sm:flex-row justify-center gap-4">
             <Link 
               to="/projects"
-              className="inline-block border border-gray-500 dark:border-gray-400 font-bold text-emerald-600 dark:text-white px-6 py-3  hover:bg-emerald-600 hover:text-white transition duration-300"
+                className="px-6 border border-gray-500 text-black dark:text-white font-semibold py-2 hover:bg-emerald-400 hover:text-white dark:hover:text-black transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
               See Work
             </Link>
@@ -48,7 +51,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <HowICanHelp/>
     </section>
+      <Testimonial/>
+      </>
   );
 };
 

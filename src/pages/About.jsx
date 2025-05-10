@@ -2,6 +2,7 @@ import React from "react";
 import skillsData from "../data/others/skills";
 import Skills from "../components/Main/SkillsCard";
 import Heading from "../components/Utils/Heading";
+import Testimonial from "../components/others/Testimonial";
 
 const About = () => {
   return (
@@ -9,9 +10,12 @@ const About = () => {
       {/* About Section */}
       <section
         id="about"
-        className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1000px] border-l-2 border-r-2  border-dashed border-gray-500 dark:border-gray-700"
+        className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700"
       >
-        <Heading name="&lt; About Me. /&gt;"tagline={<> Unveiling the <br /> Layers of My Story  </>}/>
+        <Heading
+          name="< About Me. />"
+          tagline={<> Unveiling the <br /> Layers of My Story </>}
+        />
 
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mt-16">
           {/* Left: Image of the person */}
@@ -92,8 +96,12 @@ const About = () => {
         </div>
       </section>
 
+     
+
       {/* Skills Section */}
       <Skills skillsData={skillsData} />
+
+      <Testimonial/>
     </>
   );
 };

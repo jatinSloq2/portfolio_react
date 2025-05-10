@@ -10,7 +10,7 @@ export default function BlogPost() {
   if (!post) return <div className="p-6">Blog not found</div>;
 
   return (
-    <section className="relative container mx-auto pt-5 pb-20 md:pt-10 px-4 animate-fade-in h-auto max-w-[1000px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
+    <section className="relative container mx-auto pt-5 pb-20 md:pt-10 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
       
       {/* Blog Post Image */}
       <img src={post.image} alt={post.title} className="w-auto max-h-140 mx-auto object-cover mb-6" />

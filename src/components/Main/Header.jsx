@@ -64,7 +64,7 @@ const Header = () => {
 
   return (
     <nav className="bg-white text-black dark:bg-neutral-950 dark:text-white shadow-emerald-400 dark:shadow-gray-400 border-b-2  border-dashed border-gray-500 w-full">
-      <div className="mx-auto flex items-center justify-between px-6 py-3 gap-6 max-w-[1000px] border-dashed border-l-2 border-r-2 border-gray-500">
+      <div className="mx-auto flex items-center justify-between px-6 py-3 gap-6 max-w-[1200px] border-dashed border-l-2 border-r-2 border-gray-500">
 
         {/* Mobile Sidebar */}
         {isSidebarOpen && (

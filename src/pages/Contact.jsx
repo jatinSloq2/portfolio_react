@@ -5,6 +5,7 @@ import CustomToast from "../components/others/ToastNotification"; // Importing t
 import { contactForm } from "../api/ContactApi";
 import { toastStyle } from "../components/Utils/ToastStyle";
 import Heading from "../components/Utils/Heading";
+import Testimonial from "../components/others/Testimonial";
 
 const Contact = () => {
   // Setting up state for form data (name, email, message) and errors
@@ -97,9 +98,10 @@ const Contact = () => {
   };
 
   return (
+    <>
     <main
       id="contact"
-      className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1000px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700"
+      className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700"
     >
       <div className="container mx-auto px-6 lg:px-20">
       <Heading name="&lt; Contact Me. /&gt; "/>
@@ -208,6 +210,8 @@ const Contact = () => {
         </div>
       </div>
     </main>
+      <Testimonial/>
+      </>
   );
 };
 

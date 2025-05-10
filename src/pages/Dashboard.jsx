@@ -37,7 +37,7 @@ const Dashboard = () => {
   }, []); // Fetch data on component mount
 
   return (
-    <section className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1000px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
+    <section className="relative container mx-auto pt-20 pb-10 md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
     <div className="text-center">
       <h2 className="text-emerald-600 dark:text-gray-400 text-2xl font-bold animate-text mb-2">
         &lt; Messages. /&gt;

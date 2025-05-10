@@ -1,5 +1,6 @@
 // src/components/ContextMenu.js
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ContextMenu = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -49,10 +50,10 @@ const ContextMenu = () => {
           style={{ top: menuPosition.y, left: menuPosition.x }}
         >
           <h2 className="text-xl text-center mb-4">Menu</h2>
-          <a href="/" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Home</a>
-          <a href="/about" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">About</a>
-          <a href="/contact" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Contact</a>
-          <a href="/services" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Services</a>
+          <Link to="/" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Home</Link>
+          <Link to="/about" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">About</Link>
+          <Link to="/contact" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Contact</Link>
+          <Link to="/services" className="block text-lg p-2 border-b border-gray-700 hover:bg-gray-700">Services</Link>
           <button onClick={hideMenu} className="w-full mt-4 bg-red-500 hover:bg-red-600 text-white p-2 rounded-lg">
             Close Menu
           </button>
