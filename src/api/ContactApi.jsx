@@ -5,13 +5,15 @@ const token = localStorage.getItem("token");
 
 export const contactForm = async (formData) => {
   try {
-    const res = await api.post('/submit', formData); 
+    const start = Date.now();
+    const res = await api.post("/submit", formData,  { timeout: 5000 });
+     console.log("Form submitted in", Date.now() - start, "ms");
     if (res.status === 200) {
       return res;
     }
   } catch (error) {
     console.error("Error submitting the form:", error);
-    throw error; 
+    throw error;
   }
 };
 
