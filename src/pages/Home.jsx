@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
    
-   <section className="relative container mx-auto pt-28 md:pt-42 px-2 animate-fade-in pb-42 max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
+   <section className="relative container mx-auto pt-28 md:pt-42 px-2 animate-fade-in pb-20 max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         
         {/* Decorative Image (Arrow decoration on the left side) */}

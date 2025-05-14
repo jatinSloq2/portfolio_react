@@ -2,7 +2,7 @@ import React from "react";
 import skillsData from "../data/others/skills";
 import Skills from "../components/Main/SkillsCard";
 import Heading from "../components/Utils/Heading";
-import Testimonial from "../components/others/Testimonial";
+// import Testimonial from "../components/others/Testimonial";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           tagline={<> Unveiling the <br /> Layers of My Story </>}
         />
 
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mt-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mt-16">
           {/* Left: Image of the person */}
           <div className="max-w-[200px] w-full mx-auto">
             <img
@@ -32,10 +32,7 @@ const About = () => {
           <div className="text-lg lg:w-2/3 animate-text text-black dark:text-gray-300">
             {/* Personal introduction */}
             <p className="mb-6">
-              I've grown from simply enjoying problem-solving to dedicating
-              myself to blending design with function—crafting interfaces that
-              are both beautiful and intuitive. Every project is a canvas to
-              bring visions to life with precision, care, and purpose.
+             Over time, my passion for problem-solving has evolved into a deep dedication to merging design with function. I've come to see every challenge as an opportunity to create experiences that are not only visually captivating but also highly intuitive. Crafting interfaces that balance beauty with usability has become my mission. Each project I take on feels like a blank canvas, where I meticulously shape ideas into seamless, purposeful designs. With every detail considered and every line of code written, I strive to bring visions to life with precision, care, and an unwavering sense of purpose. My education at Parishkar College of Global Excellence and full-stack developer training from Grass Institute have further solidified my foundation, allowing me to blend design and technology seamlessly.
             </p>
 
             {/* Stats Section */}
@@ -101,7 +98,7 @@ const About = () => {
       {/* Skills Section */}
       <Skills skillsData={skillsData} />
 
-      <Testimonial/>
+      {/* <Testimonial/> */}
     </>
   );
 };
