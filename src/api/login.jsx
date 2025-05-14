@@ -6,8 +6,10 @@ const api = axios.create({
 
 export const login = async (email, password) => {
   try {
-    const response = await api.post("/login", { email, password });
+      const start = Date.now();
+    const response = await api.post("/login", { email, password },  { timeout: 5000 });
     const token = response.data.token;
+     console.log("Form submitted in", Date.now() - start, "ms");
     return token;
   } catch (error) {
     console.error(
