@@ -1,8 +1,8 @@
 const Skills = ({skillsData}) => {
   return (
     <section
-        className="relative container mx-auto pt-20  md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
-        <div className="container mx-auto text-center">
+        className="relative container mx-auto pt-20 md:pt-22 px-4 animate-fade-in h-auto max-w-[1200px] border-l-2 border-r-2 border-dashed border-gray-500 dark:border-gray-700">
+        <div className="container mx-auto text-center pb-20">
           {/* Skills Header */}
           <h1 className="text-4xl lg:text-6xl text-black dark:text-white mb-8  animate-text font-semibold">
             Navigating to the <br className="hidden lg:block" />

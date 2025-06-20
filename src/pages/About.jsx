@@ -2,7 +2,6 @@ import React from "react";
 import skillsData from "../data/others/skills";
 import Skills from "../components/Main/SkillsCard";
 import Heading from "../components/Utils/Heading";
-// import Testimonial from "../components/others/Testimonial";
 
 const About = () => {
   return (
@@ -19,9 +18,9 @@ const About = () => {
 
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mt-16">
           {/* Left: Image of the person */}
-          <div className="max-w-[200px] w-full mx-auto">
+          <div className="max-w-[300px] w-full mx-auto">
             <img
-              src="/images/freepik__the-style-is-candid-image-photography-with-natural__62603.png"
+              src="images/WhatsApp Image 2025-06-14 at 18.31.40_501ad617.jpg"
               alt="About me illustration"
               className="transform transition-all duration-300 hover:rotate-6 hover:scale-105 shadow-lg "
               loading="lazy"
@@ -39,19 +38,19 @@ const About = () => {
             <div className="flex gap-8 flex-wrap mb-6">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-emerald-600 dark:text-emerald-400">
-                  04+
+                  01+
                 </h1>
                 <p className="text-xl">Years Experience</p>
               </div>
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-emerald-600 dark:text-emerald-400">
-                  20+
+                  10+
                 </h1>
                 <p className="text-xl">Projects Completed</p>
               </div>
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-emerald-600 dark:text-emerald-400">
-                  100+
+                  10+
                 </h1>
                 <p className="text-xl">Satisfied Clients</p>
               </div>
